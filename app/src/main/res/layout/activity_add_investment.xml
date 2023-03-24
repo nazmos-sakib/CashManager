@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".AddInvestmentActivity">
+    
+    <androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <Button
+    android:id="@+id/btnAddInvestment_AddInvestmentActivity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/txtWarning_AddInvestmentActivity"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="15dp"
+    android:text="Add Investment" />
+    
+    <RelativeLayout
+    android:id="@+id/initAmountRelLayout_AddInvestmentActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/nameRelLayout_AddInvestmentActivity"
+    android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/edtTxtInitAmount_AddInvestmentActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtInitAmount_AddInvestmentActivity"
+            android:layout_marginTop="5dp"
+            android:hint="Initial amount"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+    
+    <TextView
+    android:id="@+id/txtInitAmount_AddInvestmentActivity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Initial amount"
+    android:textStyle="bold" />
+    
+    </RelativeLayout>
+    
+    <RelativeLayout
+    android:id="@+id/monthlyROIRelLayout_AddInvestmentActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/initAmountRelLayout_AddInvestmentActivity"
+    android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/edtTxtMonthlyROI_AddInvestmentActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtMonthlyROI_AddInvestmentActivity"
+            android:layout_marginTop="5dp"
+            android:hint="Monthly ROI"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+    
+    <TextView
+    android:id="@+id/txtMonthlyROI_AddInvestmentActivity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Monthly ROI"
+    android:textStyle="bold" />
+    
+    </RelativeLayout>
+    
+    <RelativeLayout
+    android:id="@+id/initDateRelLayout_AddInvestmentActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/monthlyROIRelLayout_AddInvestmentActivity"
+    android:layout_marginTop="10dp">
+    
+    <RelativeLayout
+    android:id="@+id/pickInitDateRelLayout_AddInvestmentActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/txtInitDate_AddInvestmentActivity"
+    android:layout_marginTop="5dp">
+    
+    <Button
+    android:id="@+id/btnPickInitDate_AddInvestmentActivity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginLeft="10dp"
+    android:text="Pick Date" />
+
+
+        <EditText
+            android:id="@+id/edtTxtInitDate_AddInvestmentActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btnPickInitDate_AddInvestmentActivity"
+            android:hint="Initial Date"
+            android:minHeight="48dp" />
+    
+    </RelativeLayout>
+    
+    <TextView
+    android:id="@+id/txtInitDate_AddInvestmentActivity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Initial Date"
+    android:textStyle="bold" />
+    
+    </RelativeLayout>
+    
+    <RelativeLayout
+    android:id="@+id/finishDateRelLayout_AddInvestmentActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/initDateRelLayout_AddInvestmentActivity"
+    android:layout_marginTop="10dp">
+    
+    <RelativeLayout
+    android:id="@+id/pickFinishDateRelLayout_AddInvestmentActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/txtFinishDate_AddInvestmentActivity"
+    android:layout_marginTop="5dp">
+    
+    <Button
+    android:id="@+id/btnPickFinishDate_AddInvestmentActivity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginLeft="10dp"
+    android:text="Pick Date" />
+
+
+        <EditText
+            android:id="@+id/edtTxtFinishDate_AddInvestmentActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btnPickFinishDate_AddInvestmentActivity"
+            android:hint="Finish Date"
+            android:minHeight="48dp" />
+    
+    </RelativeLayout>
+    
+    <TextView
+    android:id="@+id/txtFinishDate_AddInvestmentActivity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Finish Date"
+    android:textStyle="bold" />
+    
+    </RelativeLayout>
+    
+    <RelativeLayout
+    android:id="@+id/nameRelLayout_AddInvestmentActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/txtAddInvestment_AddInvestmentActivity"
+    android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/edtTxtName_AddInvestmentActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtName_AddInvestmentActivity"
+            android:layout_marginTop="5dp"
+            android:hint="Investment name"
+            android:minHeight="48dp" />
+    
+    <TextView
+    android:id="@+id/txtName_AddInvestmentActivity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Name:"
+    android:textStyle="bold" />
+    
+    </RelativeLayout>
+    
+    <TextView
+    android:id="@+id/txtWarning_AddInvestmentActivity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/finishDateRelLayout_AddInvestmentActivity"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="15dp"
+    android:text="Warnings"
+    android:textColor="@color/color_accent"
+    android:visibility="gone" />
+    
+    <TextView
+    android:id="@+id/txtAddInvestment_AddInvestmentActivity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:text="Add Investment"
+    android:textSize="20sp"
+    android:textStyle="bold" />
+    
+    </RelativeLayout>
+    
+    </androidx.core.widget.NestedScrollView>
+    
+    </RelativeLayout>

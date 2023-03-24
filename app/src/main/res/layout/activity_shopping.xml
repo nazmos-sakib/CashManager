@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ShoppingActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/btnAdd_shoppingActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descRelLayout_shoppingActivity"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/register"
+                android:text="Add" />
+
+            <RelativeLayout
+                android:id="@+id/dateRelLayout_shoppingActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itemRelLayout_shoppingActivity"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtDate_shoppingActivity">
+
+                    <Button
+                        android:id="@+id/btnPickDate_shoppingActivity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/edtTxtDate_shoppingActivity"
+                        android:backgroundTint="@color/register"
+                        android:text="Select Date" />
+
+                    <EditText
+                        android:id="@+id/edtTxtDate_shoppingActivity"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:hint="date"
+                        android:minHeight="48dp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtDate_shoppingActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date: "
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/storeRelLayout_shoppingActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dateRelLayout_shoppingActivity"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/edtTxtStore_shoppingActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtStore_shoppingActivity"
+                    android:hint="store"
+                    android:minHeight="48dp" />
+
+                <TextView
+                    android:id="@+id/txtStore_shoppingActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Store"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/descRelLayout_shoppingActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/storeRelLayout_shoppingActivity"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/edtTxtDesc_shoppingActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtDesc_shoppingActivity"
+                    android:layout_marginTop="10dp"
+                    android:lines="2"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/txtDesc_shoppingActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/itemRelLayout_shoppingActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtAddShopping_shoppingActivity"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp">
+
+                <Button
+                    android:id="@+id/btnPick_shoppingActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="@color/register"
+                    android:text="pick item" />
+
+                <RelativeLayout
+                    android:id="@+id/invisibleItemRelLayout_shoppingActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnPick_shoppingActivity"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/edtTxtPrice_shoppingActivity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtItemName_shoppingActivity"
+                        android:layout_marginTop="10dp"
+                        android:hint="price"
+                        android:textColor="@color/green" />
+
+                    <ImageView
+                        android:id="@+id/itemImg_shoppingActivity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/txtItemName_shoppingActivity"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/txtItemName_shoppingActivity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="item name" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtAddShopping_shoppingActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Add Shopping"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtWarning_shoppingActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnAdd_shoppingActivity"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Warning"
+                android:textColor="@color/color_accent"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    
+    </RelativeLayout>

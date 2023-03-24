@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+     
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+     
+            <RelativeLayout
+                android:id="@+id/shoppingRelLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+     
+                <ImageView
+                    android:id="@+id/shoppingImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_cart" />
+     
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/shoppingImage"
+                    android:text="Shopping"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+     
+            </RelativeLayout>
+     
+            <RelativeLayout
+                android:id="@+id/investmentRelLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shoppingRelLayout"
+                android:layout_marginTop="20dp">
+     
+                <ImageView
+                    android:id="@+id/investmentImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_investment" />
+     
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/investmentImage"
+                    android:text="Investment"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+     
+            </RelativeLayout>
+     
+            <RelativeLayout
+                android:id="@+id/loanRelLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/investmentRelLayout"
+                android:layout_marginTop="20dp">
+     
+                <ImageView
+                    android:id="@+id/loanImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_loan" />
+     
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/loanImage"
+                    android:text="Loan"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+     
+            </RelativeLayout>
+     
+            <RelativeLayout
+                android:id="@+id/transactionRelLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loanRelLayout"
+                android:layout_marginTop="20dp">
+     
+                <ImageView
+                    android:id="@+id/transactionImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_transaction" />
+     
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/transactionImage"
+                    android:text="Send/Receive"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+     
+            </RelativeLayout>
+     
+        </RelativeLayout>
+     
+    </RelativeLayout>

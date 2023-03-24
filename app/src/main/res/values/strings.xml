@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Cash Manager</string>
+    <string name="img_geld">geld</string>
+    <string name="register">Register</string>
+    <string name="male_avater_4">male_avater_4</string>
+    <string name="male_avater_3">male_avater_3</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register_to_login">Have an account? Login from <span><u><i>here</i></u></span> </string>
+    <string name="developed_by_sakib"><i>Developed by Sakib</i></string>
+    <string name="fab_add_transaction">floating action button add transaction</string>
+</resources>

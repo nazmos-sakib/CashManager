@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Stats"
+        android:id="@+id/menu_items_stats"
+        android:icon="@drawable/ic_stats"/>
+
+    <item
+        android:title="Transaction"
+        android:id="@+id/menu_items_transaction"
+        android:icon="@drawable/ic_transaction"/>
+
+    <item
+        android:title="Home"
+        android:id="@+id/menu_items_home"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:title="Lone"
+        android:id="@+id/menu_items_lone"
+        android:icon="@drawable/ic_loan"/>
+
+    <item
+        android:title="Investment"
+        android:id="@+id/menu_items_investment"
+        android:icon="@drawable/ic_investment"/>
+</menu>

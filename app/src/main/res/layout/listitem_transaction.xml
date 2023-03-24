@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/parent_listitem_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="10dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="10dp">
+       
+                <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp">
+       
+                            <TextView
+                                        android:id="@+id/txtAmount"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="+ 0.0"
+                                        android:textColor="@color/green"
+                                        android:textSize="25sp"
+                                        android:textStyle="bold" />
+       
+                            <TextView
+                                        android:id="@+id/txtDesc"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/txtAmount"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginTop="10dp"
+                                        android:text="description"
+                                        android:textSize="18sp"
+                                        android:layout_toLeftOf="@+id/txtSender"
+                                        android:layout_alignParentLeft="true"/>
+       
+                            <TextView
+                                        android:id="@+id/txtDate"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtDesc"
+                                        android:layout_marginTop="10dp"
+                                        android:text="date"
+                                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/txtSender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="sender"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtTransaction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtDate"
+                        android:text="transaction id" />
+       
+                </RelativeLayout>
+       
+    </androidx.cardview.widget.CardView>
