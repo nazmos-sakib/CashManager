@@ -34,7 +34,6 @@ import com.example.cashmanager.Models.Transaction;
 import com.example.cashmanager.Models.User;
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.charts.LineChart;
-import com.github.mikephil.charting.components.Description;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.BarData;
@@ -71,8 +70,9 @@ public class MainActivity extends AppCompatActivity {
 
     private Button logout;
 
-    //list of global async task objects
     private TransactionAdapter transactionAdapter;
+
+    //list of global async task objects
     private GetTransactions getTransactions;
     private GetProfit getProfit;
     private GetSpending getSpending;
@@ -170,6 +170,7 @@ public class MainActivity extends AppCompatActivity {
     private void initBottomNavView(){
         Log.d(TAG, "initBottomNavView: started");
 
+        //current selected item
         bottomNavigationView.setSelectedItemId(R.id.menu_items_home);
 
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
@@ -189,6 +190,8 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.menu_items_investment:
+                        Intent intent = new Intent(getApplicationContext(),InvestmentActivity.class);
+                        startActivity(intent);
                         break;
                     default:
                         break;
@@ -212,7 +215,7 @@ public class MainActivity extends AppCompatActivity {
         fabAddTransaction = findViewById(R.id.fab_addTransaction_MainActivity);
 
         toolbar =findViewById(R.id.toolbar_mainActivity);
-        bottomNavigationView = findViewById(R.id.bottomNavigationView_mainActivity);
+        bottomNavigationView = findViewById(R.id.bottomNavigationView_investmentActivity);
 
     }
 

@@ -48,11 +48,11 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
 
         String createTransactionTable = "CREATE TABLE transactions (_id INTEGER PRIMARY KEY AUTOINCREMENT,"+
-        " amount double," +
-        "date DATE, type TEXT, user_id INTEGER, recipient TEXT, description TEXT)";
+                " amount double," +
+                "date DATE, type TEXT, user_id INTEGER, recipient TEXT, description TEXT)";
 
         String createItemsTable = "CREATE TABLE items (_id INTEGER PRIMARY KEY AUTOINCREMENT, "+
-        "name TEXT, image_url TEXT, description TEXT) ";
+                "name TEXT, image_url TEXT, description TEXT) ";
 
         sqLiteDatabase.execSQL(createUserTable);
         sqLiteDatabase.execSQL(createShoppingTable);

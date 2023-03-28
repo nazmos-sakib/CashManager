@@ -226,10 +226,10 @@ public class AddInvestmentActivity extends AppCompatActivity {
             super.onPreExecute();
 
             initDate = edtTxtInitDate.getText().toString();
-            finishDate = edtTxtInitDate.getText().toString();
+            finishDate = edtTxtFinishDate.getText().toString();
             name = edtTxtName.getText().toString();
             amount = Double.parseDouble(edtTxtInitAmount.getText().toString());
-            monthlyRIO = Double.parseDouble(edtTxtInitAmount.getText().toString());
+            monthlyRIO = Double.parseDouble(edtTxtROI.getText().toString());
 
             User user = utils.getSharedPreferencesLogInInfo();
 

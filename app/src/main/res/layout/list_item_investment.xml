@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="7dp"
+    android:id="@+id/parentLayout_listItemInvestment"
+    >
+
+
+
+    <LinearLayout
+        android:id="@+id/name_linearLayout_listItemInvestment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:background="@drawable/table_border"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_name1_listItemInvestment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/tv_name2_listItemInvestment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/initDate_linearLayout_listItemInvestment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_linearLayout_listItemInvestment"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_initDate1_listItemInvestment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="initDate" />
+
+        <TextView
+            android:id="@+id/tv_initDate2_listItemInvestment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ROI_linearLayout_listItemInvestment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/initDate_linearLayout_listItemInvestment"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:background="@drawable/table_border"
+        >
+
+        <TextView
+            android:id="@+id/tv_roi1_listItemInvestment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Monthly ROI" />
+
+        <TextView
+            android:id="@+id/tv_roi2_listItemInvestment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/amount_linearLayout_listItemInvestment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ROI_linearLayout_listItemInvestment"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp">
+
+        <TextView
+            android:id="@+id/tv_amount1_listItemInvestment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Amount" />
+
+        <TextView
+            android:id="@+id/tv_amount2_listItemInvestment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/profit_linearLayout_listItemInvestment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amount_linearLayout_listItemInvestment"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:background="@drawable/table_border"
+        >
+
+        <TextView
+            android:id="@+id/tv_profit1_listItemInvestment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Profit" />
+
+        <TextView
+            android:id="@+id/tv_profit2_listItemInvestment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/finishDate_linearLayout_listItemInvestment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profit_linearLayout_listItemInvestment"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_finishDate1_listItemInvestment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Finish Date" />
+
+        <TextView
+            android:id="@+id/tv_finishDate2_listItemInvestment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:text="TextView"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

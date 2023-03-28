@@ -21,7 +21,7 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_mainActivity"
-        android:layout_width="391dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/background_toolbar"
         android:minHeight="?attr/actionBarSize"
@@ -116,7 +116,7 @@
     </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView_mainActivity"
+        android:id="@+id/bottomNavigationView_investmentActivity"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@drawable/background_toolbar"
@@ -134,7 +134,7 @@
         android:layout_marginBottom="20dp"
         android:src="@drawable/ic_fab_icon_add"
         app:fabCustomSize="50dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView_mainActivity"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView_investmentActivity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.915"
         app:layout_constraintStart_toStartOf="parent"
