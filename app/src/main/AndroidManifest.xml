@@ -16,6 +16,9 @@
         android:theme="@style/Theme.CashManager"
         tools:targetApi="31">
         <activity
+            android:name=".AddLoanActivity"
+            android:exported="false" />
+        <activity
             android:name=".TransferActivity"
             android:exported="false" />
         <activity

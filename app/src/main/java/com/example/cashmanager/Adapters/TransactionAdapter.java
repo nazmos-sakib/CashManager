@@ -50,7 +50,7 @@ public class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.
             holder.txtAmount.setText("+ "+amount);
             holder.txtAmount.setTextColor(Color.GREEN);
         }else {
-            holder.txtAmount.setText("- "+amount);
+            holder.txtAmount.setText(""+amount);
             holder.txtAmount.setTextColor(Color.RED);
         }
     }

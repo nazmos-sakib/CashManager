@@ -168,7 +168,9 @@ public class AddInvestmentActivity extends AppCompatActivity {
 
             date = edtTxtInitDate.getText().toString();
             name = edtTxtName.getText().toString();
-            amount = Double.parseDouble(edtTxtInitAmount.getText().toString());
+            //amount is deducting from the main balance
+            //it should be negative
+            amount = - Double.parseDouble(edtTxtInitAmount.getText().toString());
 
         }
 
@@ -273,7 +275,7 @@ public class AddInvestmentActivity extends AppCompatActivity {
                                 double remainedAmount = cursor.getDouble(cursor.getColumnIndex("remained_amount"));
                                 //update the value
                                 ContentValues amountValues = new ContentValues();
-                                amountValues.put("remained_amount",remainedAmount-amount);
+                                amountValues.put("remained_amount",remainedAmount+amount);
                                 int affectedRows = db.update("users",amountValues,"_id=?",
                                         new String[] {String.valueOf(userId)});
                                 Log.d(TAG, "AddShopping->doInBackground: affected row: "+affectedRows);

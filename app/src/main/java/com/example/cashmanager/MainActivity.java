@@ -62,13 +62,13 @@ public class MainActivity extends AppCompatActivity {
     private LineChart lineChartView;
     private FloatingActionButton fabAddTransaction;
     private Toolbar toolbar;
+    private Button logout;
 
     private DataBaseHelper dataBaseHelper;
     private GetAccountAmount getAccountAmount;
 
     private Utils utils;
 
-    private Button logout;
 
     private TransactionAdapter transactionAdapter;
 
@@ -176,11 +176,14 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                Intent intent;
                 switch (item.getItemId()){
                     case R.id.menu_items_stats:
                         break;
 
                     case R.id.menu_items_transaction:
+                        //intent = new Intent(getApplicationContext(),TransferActivity.class);
+                        //startActivity(intent);
                         break;
 
                     case R.id.menu_items_home:
@@ -190,7 +193,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.menu_items_investment:
-                        Intent intent = new Intent(getApplicationContext(),InvestmentActivity.class);
+                        intent = new Intent(getApplicationContext(),InvestmentActivity.class);
                         startActivity(intent);
                         break;
                     default:

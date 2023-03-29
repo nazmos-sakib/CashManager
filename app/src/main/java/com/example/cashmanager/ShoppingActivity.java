@@ -173,7 +173,8 @@ public class ShoppingActivity extends AppCompatActivity implements ItemAdapter.G
             Utils utils = new Utils(ShoppingActivity.this);
             loggedInUser = utils.getSharedPreferencesLogInInfo();
             date = edtTxtDate.getText().toString();
-            price = Double.parseDouble(edtTxtItemPrice.getText().toString());
+            //price should be negative
+            price = - Double.parseDouble(edtTxtItemPrice.getText().toString());
             store = edtTxtStore.getText().toString();
             description = edtTxtDesc.getText().toString();
 
@@ -219,7 +220,7 @@ public class ShoppingActivity extends AppCompatActivity implements ItemAdapter.G
                         double remainedAmount = cursor.getDouble(cursor.getColumnIndex("remained_amount"));
                         //update the value
                         ContentValues amountValues = new ContentValues();
-                        amountValues.put("remained_amount",remainedAmount-price);
+                        amountValues.put("remained_amount",remainedAmount+price);
                         int affectedRows = db.update("users",amountValues,"_id=?",
                                 new String[] {String.valueOf(loggedInUser.get_id())});
                         Log.d(TAG, "AddShopping->doInBackground: affected row: "+affectedRows);

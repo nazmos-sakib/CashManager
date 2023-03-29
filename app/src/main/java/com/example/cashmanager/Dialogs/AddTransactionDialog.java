@@ -15,6 +15,7 @@ import androidx.fragment.app.DialogFragment;
 import com.example.cashmanager.AddInvestmentActivity;
 import com.example.cashmanager.R;
 import com.example.cashmanager.ShoppingActivity;
+import com.example.cashmanager.TransferActivity;
 
 public class AddTransactionDialog extends DialogFragment  {
     private static final String TAG = "AddTransactionDialog";
@@ -47,7 +48,9 @@ public class AddTransactionDialog extends DialogFragment  {
 
         });
         transaction.setOnClickListener(View->{
-            //TODO
+            //
+            Intent intent = new Intent(getActivity(), TransferActivity.class);
+            startActivity(intent);
 
         });
 
