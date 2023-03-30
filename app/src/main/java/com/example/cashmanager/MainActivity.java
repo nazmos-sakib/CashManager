@@ -190,6 +190,8 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.menu_items_lone:
+                        intent = new Intent(getApplicationContext(),LoanActivity.class);
+                        startActivity(intent);
                         break;
 
                     case R.id.menu_items_investment:

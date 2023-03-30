@@ -13,6 +13,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 
 import com.example.cashmanager.AddInvestmentActivity;
+import com.example.cashmanager.AddLoanActivity;
 import com.example.cashmanager.R;
 import com.example.cashmanager.ShoppingActivity;
 import com.example.cashmanager.TransferActivity;
@@ -44,7 +45,9 @@ public class AddTransactionDialog extends DialogFragment  {
             startActivity(intent);
         });
         loan.setOnClickListener(View->{
-            //TODO
+            //
+            Intent intent = new Intent(getActivity(), AddLoanActivity.class);
+            startActivity(intent);
 
         });
         transaction.setOnClickListener(View->{

@@ -2,6 +2,7 @@ package com.example.cashmanager;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 import android.content.ContentValues;
 import android.content.Intent;
@@ -173,6 +174,7 @@ public class TransferActivity extends AppCompatActivity {
                             new String[]{String.valueOf(integers[0])}, null, null, null);
                     if (null != cursor) {
                         if (cursor.moveToFirst()) {
+                            @SuppressLint("Range")
                             double remainedAmount = cursor.getDouble(cursor.getColumnIndex("remained_amount"));
                             //update the value
                             ContentValues amountValues = new ContentValues();

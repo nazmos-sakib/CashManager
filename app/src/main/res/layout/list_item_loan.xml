@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="7dp"
-    android:id="@+id/parentLayout_listItemInvestment"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:id="@+id/parentLayout_listItemLoan"
     android:background="@drawable/table_border"
     >
 
-
-
     <LinearLayout
-        android:id="@+id/name_linearLayout_listItemInvestment"
+        android:id="@+id/name_linearLayout_listItemLoan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -28,14 +26,14 @@
 
 
         <TextView
-            android:id="@+id/tv_name1_listItemInvestment"
+            android:id="@+id/tv_name1_listItemLoan"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
             android:text="Name" />
 
         <TextView
-            android:id="@+id/tv_name2_listItemInvestment"
+            android:id="@+id/tv_name2_listItemLoan"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight=".7"
@@ -43,13 +41,13 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/initDate_linearLayout_listItemInvestment"
+        android:id="@+id/initDate_linearLayout_listItemLoan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name_linearLayout_listItemInvestment"
+        app:layout_constraintTop_toBottomOf="@+id/name_linearLayout_listItemLoan"
         android:paddingTop="2dp"
         android:paddingBottom="2dp"
         android:paddingStart="5dp"
@@ -57,28 +55,29 @@
         >
 
         <TextView
-            android:id="@+id/tv_initDate1_listItemInvestment"
+            android:id="@+id/tv_initDate1_listItemLoan"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
-            android:text="initDate" />
+            android:text="Initial Date" />
 
         <TextView
-            android:id="@+id/tv_initDate2_listItemInvestment"
+            android:id="@+id/tv_initDate2_listItemLoan"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight=".7"
             android:text="TextView" />
     </LinearLayout>
 
+
     <LinearLayout
-        android:id="@+id/ROI_linearLayout_listItemInvestment"
+        android:id="@+id/ROI_linearLayout_listItemLoan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/initDate_linearLayout_listItemInvestment"
+        app:layout_constraintTop_toBottomOf="@+id/initDate_linearLayout_listItemLoan"
         android:paddingTop="2dp"
         android:paddingBottom="2dp"
         android:paddingStart="5dp"
@@ -87,14 +86,14 @@
         >
 
         <TextView
-            android:id="@+id/tv_roi1_listItemInvestment"
+            android:id="@+id/tv_roi1_listItemLoan"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
             android:text="Monthly ROI" />
 
         <TextView
-            android:id="@+id/tv_roi2_listItemInvestment"
+            android:id="@+id/tv_roi2_listItemLoan"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight=".7"
@@ -102,27 +101,28 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/amount_linearLayout_listItemInvestment"
+        android:id="@+id/monthlyPayment_linearLayout_listItemLoan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ROI_linearLayout_listItemInvestment"
+        app:layout_constraintTop_toBottomOf="@+id/ROI_linearLayout_listItemLoan"
         android:paddingTop="2dp"
         android:paddingBottom="2dp"
         android:paddingStart="5dp"
-        android:paddingEnd="5dp">
+        android:paddingEnd="5dp"
+        >
 
         <TextView
-            android:id="@+id/tv_amount1_listItemInvestment"
+            android:id="@+id/tv_monthlyPayment1_listItemLoan"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
-            android:text="Amount" />
+            android:text="Monthly Payment" />
 
         <TextView
-            android:id="@+id/tv_amount2_listItemInvestment"
+            android:id="@+id/tv_monthlyPayment2_listItemLoan"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight=".7"
@@ -130,13 +130,13 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/profit_linearLayout_listItemInvestment"
+        android:id="@+id/loanAmount_linearLayout_listItemLoan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/amount_linearLayout_listItemInvestment"
+        app:layout_constraintTop_toBottomOf="@+id/monthlyPayment_linearLayout_listItemLoan"
         android:paddingTop="2dp"
         android:paddingBottom="2dp"
         android:paddingStart="5dp"
@@ -145,28 +145,29 @@
         >
 
         <TextView
-            android:id="@+id/tv_profit1_listItemInvestment"
+            android:id="@+id/tv_loanAmount1_listItemLoan"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
-            android:text="Profit" />
+            android:text="Loan Amount" />
 
         <TextView
-            android:id="@+id/tv_profit2_listItemInvestment"
+            android:id="@+id/tv_loanAmount2_listItemLoan"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight=".7"
             android:text="TextView" />
     </LinearLayout>
 
+
     <LinearLayout
-        android:id="@+id/finishDate_linearLayout_listItemInvestment"
+        android:id="@+id/remainedAmount_linearLayout_listItemLoan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profit_linearLayout_listItemInvestment"
+        app:layout_constraintTop_toBottomOf="@+id/loanAmount_linearLayout_listItemLoan"
         android:paddingTop="2dp"
         android:paddingBottom="2dp"
         android:paddingStart="5dp"
@@ -174,19 +175,79 @@
         >
 
         <TextView
-            android:id="@+id/tv_finishDate1_listItemInvestment"
+            android:id="@+id/tv_remainedAmount1_listItemLoan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Remained Amount" />
+
+        <TextView
+            android:id="@+id/tv_remainedAmount2_listItemLoan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/totalExpectedLoss_linearLayout_listItemLoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remainedAmount_linearLayout_listItemLoan"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:background="@drawable/table_border"
+        >
+
+        <TextView
+            android:id="@+id/tv_totalExpectedLoss1_listItemLoan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Total expected loss" />
+
+        <TextView
+            android:id="@+id/tv_totalExpectedLoss2_listItemLoan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/finishDate_linearLayout_listItemLoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalExpectedLoss_linearLayout_listItemLoan"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_finishDate1_listItemLoan"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
             android:text="Finish Date" />
 
         <TextView
-            android:id="@+id/tv_finishDate2_listItemInvestment"
+            android:id="@+id/tv_finishDate2_listItemLoan"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight=".7"
-            android:text="TextView"
-            />
+            android:text="TextView" />
     </LinearLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
