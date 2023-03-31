@@ -6,4 +6,10 @@
         android:id="@+id/menu_code_mainActivity"
         android:icon="@drawable/ic_menu_code"
         app:showAsAction="always"/>
+
+    <item
+        android:title="Logout"
+        android:id="@+id/menu_Exit_mainActivity"
+        android:icon="@drawable/ic_logout_24"
+        app:showAsAction="always"/>
 </menu>

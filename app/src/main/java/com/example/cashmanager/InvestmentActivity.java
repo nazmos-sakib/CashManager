@@ -66,23 +66,29 @@ public class InvestmentActivity extends AppCompatActivity {
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                Intent intent;
                 switch (item.getItemId()){
                     case R.id.menu_items_stats:
+                        intent = new Intent(getApplicationContext(),StatsActivity.class);
+                        startActivity(intent);
                         break;
 
                     case R.id.menu_items_transaction:
+                        intent = new Intent(getApplicationContext(),TransactionsActivity.class);
+                        startActivity(intent);
                         break;
 
                     case R.id.menu_items_home:
-                        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                        intent = new Intent(getApplicationContext(),MainActivity.class);
                         startActivity(intent);
                         break;
 
                     case R.id.menu_items_lone:
+                        intent = new Intent(getApplicationContext(),LoanActivity.class);
+                        startActivity(intent);
                         break;
 
                     case R.id.menu_items_investment:
-
                         break;
                     default:
                         break;

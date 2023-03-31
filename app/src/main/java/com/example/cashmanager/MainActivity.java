@@ -65,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
     private Button logout;
 
     private DataBaseHelper dataBaseHelper;
-
     private Utils utils;
 
 
@@ -179,6 +178,8 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent;
                 switch (item.getItemId()){
                     case R.id.menu_items_stats:
+                        intent = new Intent(getApplicationContext(),StatsActivity.class);
+                        startActivity(intent);
                         break;
 
                     case R.id.menu_items_transaction:
@@ -336,6 +337,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    @SuppressLint("StaticFieldLeak")
     private class GetTransactions extends AsyncTask <Integer, Void, ArrayList<Transaction>>{
 
         @SuppressLint("Range")
@@ -697,6 +699,10 @@ public class MainActivity extends AppCompatActivity {
                         });
                 builder.show();
                 break;
+            case R.id.menu_Exit_mainActivity:
+                logoutUser();
+                break;
+
             default:
                 break;
         }

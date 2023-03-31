@@ -97,7 +97,7 @@ public class TransferActivity extends AppCompatActivity {
         User user = utils.getSharedPreferencesLogInInfo();
 
         if (null != user) {
-            //TODO
+            //
             addTransactionTask = new AddTransaction();
             addTransactionTask.execute(user.get_id());
         }

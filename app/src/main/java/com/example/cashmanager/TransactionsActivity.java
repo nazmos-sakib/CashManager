@@ -112,6 +112,8 @@ public class TransactionsActivity extends AppCompatActivity {
                 Intent intent;
                 switch (item.getItemId()){
                     case R.id.menu_items_stats:
+                        intent = new Intent(getApplicationContext(),StatsActivity.class);
+                        startActivity(intent);
                         break;
 
                     case R.id.menu_items_transaction:
