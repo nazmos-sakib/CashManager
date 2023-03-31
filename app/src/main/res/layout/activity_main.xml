@@ -116,7 +116,7 @@
     </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView_investmentActivity"
+        android:id="@+id/bottomNavigationView_mainActivity"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@drawable/background_toolbar"
@@ -134,10 +134,12 @@
         android:layout_marginBottom="20dp"
         android:src="@drawable/ic_fab_icon_add"
         app:fabCustomSize="50dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView_investmentActivity"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView_mainActivity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.915"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="SpeakableTextPresentCheck" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

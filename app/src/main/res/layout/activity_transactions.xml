@@ -4,6 +4,181 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TransactionsActivity">
+    tools:context=".TransactionsActivity"
+    android:id="@+id/parent_transactionActivity"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/NestedScrollView_transactionActivity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView_transactionActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/filter_transactionActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Filters: "
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_filter_transactionActivity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/rdoGroup_transactionActivity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35">
+
+                    <RadioButton
+                        android:id="@+id/rBtn_all_transactionActivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="All" />
+
+                    <RadioButton
+                        android:id="@+id/rBtn_shopping_transactionActivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="7dp"
+                        android:text="Shopping" />
+
+                    <RadioButton
+                        android:id="@+id/rBtn_investment_transactionActivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="7dp"
+                        android:text="Investment" />
+
+                    <RadioButton
+                        android:id="@+id/rBtn_profit_transactionActivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="7dp"
+                        android:text="Profit" />
+
+                    <RadioButton
+                        android:id="@+id/rBtn_loan_transactionActivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="7dp"
+                        android:text="Loan" />
+
+                    <RadioButton
+                        android:id="@+id/rBtn_loanPayment_transactionActivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="7dp"
+                        android:text="Loan Payment" />
+
+                    <RadioButton
+                        android:id="@+id/rBtn_send_transactionActivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="7dp"
+                        android:text="Send" />
+
+                    <RadioButton
+                        android:id="@+id/rBtn_receive_transactionActivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="7dp"
+                        android:text="Receive" />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.65"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:text="show transaction Grater than: "
+                        android:textSize="18sp" />
+
+
+                    <EditText
+                        android:id="@+id/edTxt_search_investmentActivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="0.0"
+                        android:inputType="number"
+                        android:minHeight="48dp" />
+
+                    <Button
+                        android:id="@+id/btn_search_investmentActivity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Search"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recView_allTransaction_transactionActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView_transactionActivity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background_toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemTextColor="@color/bottom_nav_color"
+        app:itemIconTint="@color/bottom_nav_color">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <TextView
+        android:id="@+id/tv_noTransaction_transactionActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="100dp"
+        android:gravity="center"
+        android:text="No transaction to Show"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/NestedScrollView_transactionActivity" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

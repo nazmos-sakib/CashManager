@@ -65,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
     private Button logout;
 
     private DataBaseHelper dataBaseHelper;
-    private GetAccountAmount getAccountAmount;
 
     private Utils utils;
 
@@ -73,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
     private TransactionAdapter transactionAdapter;
 
     //list of global async task objects
+    private GetAccountAmount getAccountAmount;
     private GetTransactions getTransactions;
     private GetProfit getProfit;
     private GetSpending getSpending;
@@ -182,8 +182,8 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.menu_items_transaction:
-                        //intent = new Intent(getApplicationContext(),TransferActivity.class);
-                        //startActivity(intent);
+                        intent = new Intent(getApplicationContext(),TransactionsActivity.class);
+                        startActivity(intent);
                         break;
 
                     case R.id.menu_items_home:
@@ -220,7 +220,7 @@ public class MainActivity extends AppCompatActivity {
         fabAddTransaction = findViewById(R.id.fab_addTransaction_MainActivity);
 
         toolbar =findViewById(R.id.toolbar_mainActivity);
-        bottomNavigationView = findViewById(R.id.bottomNavigationView_investmentActivity);
+        bottomNavigationView = findViewById(R.id.bottomNavigationView_mainActivity);
 
     }
 

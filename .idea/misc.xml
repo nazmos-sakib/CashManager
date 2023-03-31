@@ -18,11 +18,12 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.26038781163434904" />
         <entry key="app/src/main/res/layout/activity_registerctivity.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_shopping.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_transactions.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_transfer.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_website.xml" value="0.24092827004219408" />
         <entry key="app/src/main/res/layout/dialog_add_transaction.xml" value="0.240084388185654" />
         <entry key="app/src/main/res/layout/dialog_select_item.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/list_item_investment.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/list_item_investment.xml" value="0.25" />
         <entry key="app/src/main/res/layout/list_item_loan.xml" value="0.1" />
         <entry key="app/src/main/res/layout/listitem_item.xml" value="0.244017094017094" />
         <entry key="app/src/main/res/layout/listitem_transaction.xml" value="0.244017094017094" />
