@@ -14,36 +14,51 @@ Cash Manager is the ideal app for anyone who wants to take control of their fina
 ### Home
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/nazmos-sakib/CashManager/main/app/src/main/res/ScreenShot/img_7.png" width="50%" height="50%">
+  <img src="https://raw.githubusercontent.com/nazmos-sakib/CashManager/main/app/src/main/res/ScreenShot/img_7.png" width="20%" height="20%">
 </p>
-
-![Home page. ](https://raw.githubusercontent.com/nazmos-sakib/CashManager/main/app/src/main/res/ScreenShot/img_7.png)
 
 
 ### Fliltering of transaction
-![Filtering the transactions](https://raw.githubusercontent.com/nazmos-sakib/CashManager/main/app/src/main/res/ScreenShot/img.png)
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nazmos-sakib/CashManager/main/app/src/main/res/ScreenShot/img.png" width="20%" height="20%">
+</p>
 
 
 ### Category of Transaction 
-![a perfect mountain bike.](https://raw.githubusercontent.com/nazmos-sakib/CashManager/main/app/src/main/res/ScreenShot/img_1.png)
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nazmos-sakib/CashManager/main/app/src/main/res/ScreenShot/img_1.png" width="20%" height="20%">
+</p>
 
 ### visualization of Transactions
-![Data Visualization](https://raw.githubusercontent.com/nazmos-sakib/CashManager/main/app/src/main/res/ScreenShot/img_2.png)
 
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nazmos-sakib/CashManager/main/app/src/main/res/ScreenShot/img_2.png" width="20%" height="20%">
+</p>
 
 ### Add Transaction
-![Adding a new Transaction.](https://raw.githubusercontent.com/nazmos-sakib/CashManager/main/app/src/main/res/ScreenShot/img_5.png)
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nazmos-sakib/CashManager/main/app/src/main/res/ScreenShot/img_5.png" width="20%" height="20%">
+</p>
 
 ### Add Shoping Item
-![a perfect mountain bike.](https://raw.githubusercontent.com/nazmos-sakib/CashManager/main/app/src/main/res/ScreenShot/img_6.png)
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nazmos-sakib/CashManager/main/app/src/main/res/ScreenShot/img_6.png" width="20%" height="20%">
+</p>
 
 ### Login
-![Log In page.](https://raw.githubusercontent.com/nazmos-sakib/CashManager/main/app/src/main/res/ScreenShot/img_3.png)
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nazmos-sakib/CashManager/main/app/src/main/res/ScreenShot/img_3.png" width="20%" height="20%">
+</p>
 
 
 ### Signup
-![Sign Up Page.](https://raw.githubusercontent.com/nazmos-sakib/CashManager/main/app/src/main/res/ScreenShot/img_4.png)
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nazmos-sakib/CashManager/main/app/src/main/res/ScreenShot/img_4.png" width="20%" height="20%">
+</p>
