@@ -250,7 +250,7 @@ public class StatsActivity extends AppCompatActivity {
                 xAxis.setAxisMaximum(31);
                 xAxis.setEnabled(false);
                 YAxis yAxis = barChartView.getAxisLeft();
-                yAxis.setAxisMinimum(10);
+                //yAxis.setAxisMinimum(10);
                 yAxis.setDrawGridLines(false);
                 barChartView.setData(data);
                 Description description = new Description();

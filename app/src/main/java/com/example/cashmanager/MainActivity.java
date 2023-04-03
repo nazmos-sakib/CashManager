@@ -274,6 +274,11 @@ public class MainActivity extends AppCompatActivity {
             super.onPostExecute(aDouble);
 
             if (null!=aDouble){
+                if(aDouble<0){
+                    tv_amount.setTextColor(Color.RED);
+                } else {
+                    tv_amount.setTextColor(Color.RED);
+                }
                 tv_amount.setText(aDouble +" €");
             }else {
                 tv_amount.setText("0.0 €");
@@ -645,8 +650,8 @@ public class MainActivity extends AppCompatActivity {
                 xAxis.setAxisMaximum(31);
                 xAxis.setEnabled(false);
                 YAxis yAxis = barChartView.getAxisLeft();
-                yAxis.setAxisMaximum(30);
-                yAxis.setAxisMinimum(10);
+                //yAxis.setAxisMaximum(30);
+                //yAxis.setAxisMinimum(5);
                 yAxis.setDrawGridLines(false);
                 barChartView.setData(data);
                 barChartView.setDescription(null);
