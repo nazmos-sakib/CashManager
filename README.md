@@ -12,7 +12,12 @@ Cash Manager is the ideal app for anyone who wants to take control of their fina
 ## Screenshots of the app
 
 ### Home
-![Home page. ](https://raw.githubusercontent.com/nazmos-sakib/CashManager/main/app/src/main/res/drawable/bike.jpg)
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nazmos-sakib/CashManager/main/app/src/main/res/ScreenShot/img_7.png" width="50%" height="50%">
+</p>
+
+![Home page. ](https://raw.githubusercontent.com/nazmos-sakib/CashManager/main/app/src/main/res/ScreenShot/img_7.png)
 
 
 ### Fliltering of transaction
@@ -20,7 +25,7 @@ Cash Manager is the ideal app for anyone who wants to take control of their fina
 
 
 ### Category of Transaction 
-![a perfect mountain bike.](https://raw.githubusercontent.com/nazmos-sakib/CashManager/main/app/src/main/res/drawable/bike.jpg)
+![a perfect mountain bike.](https://raw.githubusercontent.com/nazmos-sakib/CashManager/main/app/src/main/res/ScreenShot/img_1.png)
 
 
 ### visualization of Transactions
