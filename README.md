@@ -2,12 +2,12 @@
 
 Cash Manager is the ideal app for anyone who wants to take control of their finances and manage their money more effectively. With its advanced features, intuitive interface, and powerful visualization tools, Cash Manager makes it easy to track and manage your expenses, investments, loans, and transactions, helping you to achieve your financial goals.
 
-##Key features of the app:
--Online/Offline use
--User can Login or SignUp 
--Offline Database
--visualization of Transactions
--User Friendly interface-custom filtering of transactions
+## Key features of the app:
+- Online/Offline use
+- User can Login or SignUp 
+- Offline Database
+- visualization of Transactions
+- User Friendly interface-custom filtering of transactions
 
 ## Screenshots of the app
 
